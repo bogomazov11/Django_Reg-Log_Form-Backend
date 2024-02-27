@@ -3,7 +3,7 @@
 
 <head>
     <!-- Design by foolishdeveloper.com -->
-    <title>Signup Page</title>
+    <title>Registration</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -154,7 +154,7 @@
     </div>
     <form action="" method="post">
         {% csrf_token %}
-        <h3>Signup Here</h3>
+        <h3>Register your account</h3>
 
         <label for="username">Username</label>
         <input type="text" placeholder="Username" name="username" id="username">
@@ -166,11 +166,11 @@
         <input type="password" placeholder="Password" id="password1" name="password1">
 
 
-        <label for="password2">Confrom Password</label>
+        <label for="password2">Repeat Password</label>
         <input type="password" placeholder="Confrom Password" id="password2" name="password2">
-        <button type="submit">Signup</button>
+        <button type="submit">Sign Up</button>
 
-        <a href="{% url 'login' %}">I already have an account</a>
+        <p>Have an account? <a href="{% url 'login' %}">Sign In</a></p>
     </form>
 </body>
 
